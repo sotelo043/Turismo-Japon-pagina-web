@@ -1,0 +1,346 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#bc002d;
+    color:white;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
+footer{
+    background:#bc002d;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:40px;
+}
+
+.contenido{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+.bloque{
+    background:#dddddd;
+    padding:20px;
+    margin:20px 0;
+}
+
+.imagen-estacion{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:20px auto;
+    border-radius:8px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.dropdown{
+    position:absolute;
+    left:20px;
+    top:20px;
+    z-index:1000;
+}
+
+/* BOTÓN MENU */
+
+.dropbtn{
+    background:white;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* MENÚ OCULTO */
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:160px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    border-radius:5px;
+    margin-top:5px;
+    overflow:hidden;
+}
+
+/* OPCIONES MENU */
+
+.dropdown-content a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:black;
+    transition:0.3s;
+}
+
+/* HOVER MENU */
+
+.dropdown-content a:hover{
+    background:#bc002d;
+    color:white;
+}
+
+/* CLASE JS */
+
+.mostrar{
+    display:block !important;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.titulo-estacion{
+    background:#cccccc;
+    width:100%;
+    max-width:500px;
+    margin:40px auto;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.subtitulo{
+    background:#cccccc;
+    width:100%;
+    max-width:300px;
+    padding:15px;
+    margin:20px 0;
+    box-sizing:border-box;
+}
+
+.descripcion{
+    background:#cccccc;
+    width:100%;
+    max-width:700px;
+    padding:20px;
+    margin:20px 0;
+    box-sizing:border-box;
+}
+
+.actividades{
+    background:#cccccc;
+    width:100%;
+    max-width:350px;
+    padding:15px;
+    margin:20px 0;
+    box-sizing:border-box;
+}
+
+.cultura{
+    background:#cccccc;
+    width:100%;
+    max-width:500px;
+    padding:20px;
+    margin:20px 0;
+    box-sizing:border-box;
+}
+
+.fechas{
+    background:#cccccc;
+    width:100%;
+    max-width:400px;
+    padding:20px;
+    margin:20px 0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   FLEXBOX
+========================= */
+
+.galeria-flex{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.card-imagen{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.card-imagen img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-imagen h3{
+    margin:15px 0 10px;
+}
+
+.card-imagen p{
+    padding:0 15px;
+}
+
+/* =========================
+   CARRUSEL
+========================= */
+
+.carrusel{
+    position:relative;
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+}
+
+#imagen-carrusel{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* BOTONES CARRUSEL */
+
+.btn-carrusel{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-size:24px;
+    border-radius:50%;
+    width:auto;
+}
+
+.izquierda{
+    left:10px;
+}
+
+.derecha{
+    right:10px;
+}
+
+.btn-carrusel:hover{
+    background:rgba(0,0,0,0.8);
+}
+
+/* =========================
+   BOTON GENERAL
+========================= */
+
+.boton-general{
+    padding:10px;
+    margin:10px;
+    border:none;
+    background:#bc002d;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.boton-general:hover{
+    background:#8f0022;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+    body{
+        font-size:18px;
+    }
+
+    .contenido{
+        width:95%;
+        margin:20px auto;
+    }
+
+    .titulo-estacion,
+    .descripcion,
+    .fechas,
+    .cultura,
+    .actividades,
+    .subtitulo,
+    .bloque{
+        width:100%;
+    }
+
+    header{
+        padding:15px;
+    }
+
+    header h1{
+        font-size:28px;
+        margin-top:40px;
+    }
+
+    p{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    li{
+        font-size:18px;
+        margin-bottom:10px;
+    }
+
+    .dropbtn{
+        font-size:18px;
+        padding:12px 16px;
+    }
+
+    .dropdown-content a{
+        font-size:18px;
+        padding:14px;
+    }
+
+    .boton-general{
+        width:100%;
+        font-size:18px;
+        padding:14px;
+    }
+
+    #imagen-carrusel{
+        height:250px;
+    }
+
+    .imagen-estacion{
+        width:100%;
+    }
+
+    .galeria-flex{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card-imagen{
+        width:95%;
+    }
+
+    .btn-carrusel{
+        font-size:18px;
+        padding:10px;
+        width:auto;
+    }
+
+}
